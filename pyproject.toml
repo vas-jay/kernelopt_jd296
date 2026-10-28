@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vas-jay-kernelopt_jd296"
+version = "0.1.0"
+description = "为每一项打分并与阈值比较，明确标出通过、边界与不通过三档"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "vas-jay" }]
+keywords = ["ai", "llm", "cli", "analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://vas-jay.github.io"
+Repository = "https://github.com/vas-jay/kernelopt_jd296"
+Issues = "https://github.com/vas-jay/kernelopt_jd296/issues"
+
+[project.scripts]
+kernelopt_jd296 = "kernelopt_jd296:main"
+
+[tool.setuptools]
+py-modules = ["kernelopt_jd296"]
